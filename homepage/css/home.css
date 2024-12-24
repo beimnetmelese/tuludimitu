@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+}
+
+main {
+    width: 96%;
+    text-align: center;
+    background: linear-gradient(to top, rgba(106, 118, 180, 0.9), rgba(0, 3, 18, 0.6)), url("../../images/school-gcap.jpg");
+    padding: 5rem 2rem;
+    color: #fff;
+}
+
+.img {
+    width: 100%;
+    padding: 14% 0px 20% 0px;
+    font-size: 70px;
+    color: rgb(165, 196, 118);
+    z-index: 10px; 
+}
+
+.img p, .img a {
+    color: #fff;
+    padding-left: 2%;
+}
+
+.img .span {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.img .button { 
+    border: solid black 1px;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgb(196, 184, 168);
+}
+
+.img .button:hover {
+    background: hsl(223, 11%, 88%);
+}
+
+/* About Us */
+.about-us {
+    background: url("../../images/img3.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    padding: 5% 0px;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 25%;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-us .button {
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin: 1% 43%;
+    font-size: 16px;
+    background: rgb(196, 184, 168);
+
+}
+.about-us .button:hover {
+    background: hsl(223, 11%, 88%);
+}
+
+
+/* News Part */
+.news-h1 {
+    padding: 2%;
+    background: whitesmoke;
+    text-decoration: underline green;
+    color: black;
+}
+
+.news-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(216, 216, 219);
+}
+
+.news {
+    width: 30%;
+    display: block;
+    height: 53vh;
+    overflow: hidden;
+    background: white;
+}
+
+.news .image img {
+    width: 100%;
+    height: 48vh;
+}
+.news .text{
+    color: black;
+}
+
+.news, .image {
+    transition: 1.2s;   
+}
+
+.news:hover .image {
+    margin-top: -48vh;
+}
+
+/* The Last Part */
+.login_video {
+    display: flex;
+    margin: 5% 0px;
+    width: 100%;
+    height: 60vh;
+    background: whitesmoke;
+}
+
+.login {
+    width: 45%;
+    background-color: #eadfdf;
+    color: black;
+}
+
+.video {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 100%;
+    height: 60vh;
+}
+
+.login form {
+    width: 75%;
+    margin: 5%;
+    background: whitesmoke;
+    padding: 3% 4% 10%;
+    box-shadow: 10px 0px 10px 0px #9e9c9c;
+}
+
+.login input {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 8%;
+}
+
+.login div {
+    padding: 8px;
+}
+
+.login legend {
+    text-align: center;
+    font-size: 15px;
+    font-family: algerian;
+}
+
+.login button {
+    margin-left: 70%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 10px 0px 10px 0px #9e9c9c;
+}
+
+.login button:hover {
+    background: rgb(126, 198, 126);
+}
+
+@media only screen and (max-width: 860px) {
+    .about-us {
+        height: 40vh;
+    }
+
+    .about-us p {
+        font-size: 15px;  
+    }
+
+    .news-h1 {
+        padding: 10% 4% 4% 4%;
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news {
+        width: 80%;
+        margin: 10px 0; 
+        height: 35vh;
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease-in-out; 
+    }
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(7, 123, 59, 0.6);
+        font-size: 16px;
+        padding: 20px; 
+        box-sizing: border-box; 
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; 
+        z-index: 1; 
+        border-radius: 10px;
+    }
+
+    .news:hover .image img {
+        opacity: 0; 
+    }
+
+    .news:hover .image {
+        margin-top: 0em;
+    }
+
+    .news:hover .text {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .img {
+        font-size: 50px;
+    }
+
+    .img .span {
+        font-size: 30px;
+    }
+
+    .about-us {
+        width: 70%;
+        height: 53vh;
+        overflow: scroll;
+    }
+
+    .about-us p {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px 5%;
+    }
+
+    .about-us h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .about-us button {
+        padding: 3px 20px;
+    }
+
+    .login_video {
+        flex-direction: column-reverse;
+        height: 70vh;
+    }
+
+    .login {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .video video {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .login form {
+        width: 65%;
+        margin: 1%;
+        background: whitesmoke;
+        padding: 3% 4% 1%;
+        box-shadow: 10px 0px 10px 0px #9e9c9c;
+    }
+}

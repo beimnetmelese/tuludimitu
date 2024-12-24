@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="../images/favicon.png">
+    <title>Tullu Dimtu Primary School</title>
+</head>
+<body>
+    <!-- header part -->
+    <header class="header_n">
+        <section class="header-title-line">
+            <h1 class="logo_n">TDPSchool</h1>
+        </section>
+        <nav class="hero_nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main part -->
+    <main>
+        <div class="img">
+            <p>Welcome</p>
+            <p>Tullu Dimtu Primary School</p>
+            <p class="span">Creating the future</p>
+            <a href="./about.html"><button class="button">Explore</button></a>
+        </div>
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>Tullu Dimtu Primary School is renowned for offering exceptional education to students in grades 1 through 8. 
+               We prioritize a student-centered learning approach that fosters creativity and skill development. Our experienced 
+               teachers bring a wealth of knowledge to the classroom, enhancing the learning experience. Our mission is to cultivate 
+               a foundation of intellectual, ethical, and creative growth in our students, empowering them to contribute positively 
+               to society and build a better world.</p>
+            <a href="./about.html"><button class="button">Read More</button></a>
+        </div>
+        <h1 class="news-h1">Latest News</h1>
+        <div class="news-container">
+            <div class="news">
+                <div class="image"><img src="../images/img2.avif" alt="news image"></div>
+                <div class="text">
+                    <h3>Supporting Local Community</h3>
+                    Tullu Dimtu Primary School student council launches a community outreach program aimed at supporting local families 
+                    in need. Students organize donation drives and volunteer efforts to make a positive impact on the community, 
+                    demonstrating the school's commitment to social responsibility. A local school introduces a pioneering learning 
+                    program that combines traditional education with cutting-edge technology.
+                </div>
+            </div>
+            <div class="news">
+                <div class="image"><img src="../images/img4.avif" alt="news image2"></div>
+                <div class="text">
+                    <h3>Students Showcase</h3>
+                    Students from the science club at Tullu Dimtu Primary School showcase their brilliance at the regional science fair. 
+                    Their projects, ranging from robotics to environmental studies, earn top honors. The school is proud of its budding 
+                    scientists and their dedication to exploring the wonders of science. A local school introduces a pioneering learning 
+                    program that combines traditional education with cutting-edge technology.
+                </div>
+            </div>
+        </div>
+        <div class="login_video">
+            <div class="login">
+                <form id="signInForm">
+                    <legend>
+                        <h2>Get Started</h2>
+                        <hr>
+                    </legend>
+                    <h4>TDPS</h4>
+                    <div>
+                        <label for="email">Email Address*</label><br>
+                        <input name="email" placeholder="Email" type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password*</label><br>
+                        <input name="password" placeholder="Password" type="password" id="password" minlength="6" maxlength="9" required>
+                    </div>
+                    <button type="button" class="btn" onclick="authorize()">Sign In</button>
+                    <p>Don't have an account? <a href="registration.html">| Sign Up</a></p>
+                </form>
+            </div>
+            <div class="video">
+              <video src="../videos/School and Community Relations.mp4"  alt="more about us" autoplay muted controls></video>
+            </div>
+  
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="top">
+            <div class="left">
+                <p>TDPSchool</p>
+                <div class="links">
+                    <h4>Quick Links</h4>
+                    <a href="home.html">| Home</a>
+                    <a href="about.html">| About Us</a>
+                    <a href="news.html">| News</a>
+                    <a href="login.html">| Login</a>
+                </div>
+                <div class="socials">
+                    <h4>Socials</h4>
+                    <a href="https://www.instagram.com">| Instagram</a>
+                    <a href="https://www.facebook.com">| Facebook</a>
+                    <a href="https://www.linkedin.com">| Linkedin</a>
+                    <a href="https://www.telegram.com">| Telegram</a>
+                </div>
+            </div>
+            <div class="i2">
+                <h4>Contact Us</h4>
+                <p><i class="fa fa-phone"></i> +251 911098097</p>
+            </div>
+            <div class="fa-fa-phone">
+                <p><a href="mailto:TDPSchool2001@gmail.com"><i class="fa fa-envelope"></i> Tuludimtuschool@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Tullu Dimtu Primary School &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

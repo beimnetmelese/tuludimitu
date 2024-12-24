@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESIGN FOR SMALL SCREEN */
+.hero {
+    background: linear-gradient(#3ab6bf5e, #1a5271c7),
+    url("../../images/hero.jpg") no-repeat top right;
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #000000;
+    margin-right: 30px;
+}
+
+.hero p {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 5px #202020;
+}
+
+main.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+
+.img-container {
+    display: grid;
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.img-container section {
+    box-shadow: 0px 0px 0.8px black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.img-container figure {
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+}
+
+.img-container figcaption {
+    position: relative;
+    padding-left: 10px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img-container figcaption h3 {
+    color: #fff;
+    padding: 0.75rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.img-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0.75rem;
+    color: #666666;
+}
+
+/* DESIGN FOR LARGE SCREEN */
+@media screen and (min-width: 800px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .header_n {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .hero_nav {
+        display: block;
+    }
+
+    .hero_nav ul,
+    nav li,
+    nav a {
+        display: inline-block;
+    }
+
+    .hero_nav li {
+        margin-right: 50px;
+        border: none;
+    }
+
+    .hero_nav a {
+        font-size: 1.2rem;
+        transition: 0.5s ease-in;
+    }
+
+    .hero_nav a:hover {
+        color: rgb(113, 158, 225);
+    }
+
+    .hero {
+        background-position: center center;
+        padding: 4em 2em;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero p {
+        flex: 1;
+    }
+
+    .img-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}

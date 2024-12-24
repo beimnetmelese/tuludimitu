@@ -1,0 +1,78 @@
+header {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.header-title-line {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header_n .fa {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.hero_nav {
+    display: none; /* Initially hidden */
+    background-color: rgb(13, 13, 30);
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0.5rem;
+    border-top: 1px solid whitesmoke;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem; /* Corrected from 1.5 to 1.5rem */
+    width: 80%;
+    margin: auto;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+@media screen and (min-width: 750px) {
+    .header_n {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .hero_nav {
+        display: block; /* Show on larger screens */
+    }
+    .hero_nav ul,
+    nav li,
+    nav a {
+        display: inline-block; /* Inline on larger screens */
+    }
+    .hero_nav li {
+        margin-right: 50px;
+        border: none; /* No border on inline items */
+    }
+    .hero_nav a {
+        font-size: 1.2rem;
+        transition: 0.5s ease-in;
+    }
+    .hero_nav a:hover {
+        color: rgb(113, 158, 225); /* Hover color change */
+    }
+}
